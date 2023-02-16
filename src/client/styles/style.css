@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap');
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #252525;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 0 0.125rem 0.125rem rgba(25,25,25,0.7)
+}
+
+button,
+.btn {
+  border: none;
+  border-radius: 0.125rem;
+  padding: 0.25rem 1rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #252525;
+  box-shadow: 0 0.125rem 0.125rem rgba(25,25,25,0.7)
+}
+
+.sb-container {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.frame {
+  padding: 1rem;
+  border: 0.125rem solid #252525;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-frame-container {
+  display: flex;
+}
+
+.sub-frame {
+  border-bottom: 0.125rem solid #252525;
+  border-left: 0.125rem solid #252525;
+  padding: 0.25rem;
+  margin: -1rem 0 0 0;
+  text-shadow: 0 0.125rem 0.125rem rgba(25, 25, 25, 0.7);
+}
+
+.sub-frame:last-child {
+  background-color: aqua;
+  margin: -1rem -1rem 0 0;
+}
+
+.frame-score {
+  margin: 1rem 0 0 1rem;
+  text-shadow: 0 0.125rem 0.125rem rgba(25, 25, 25, 0.7);
+}
+
+.np-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 2rem 0;
+}
+
+.num {
+  /* flex-basis: 20%; */
+  border: 0.125rem solid #252525;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: yellow;
+  text-shadow: 0 0.125rem 0.125rem rgba(25, 25, 25, 0.7);
+}
+
+.num:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.num:active {
+  text-shadow: none;
+}
