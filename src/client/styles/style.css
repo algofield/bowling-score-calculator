@@ -95,3 +95,13 @@ button,
 .num:active {
   text-shadow: none;
 }
+
+.num.disabled {
+  text-shadow: none;
+  background-color: slategrey;
+}
+
+.num.disabled:hover,
+.num.disabled:active {
+  background-color: slategrey;
+}
