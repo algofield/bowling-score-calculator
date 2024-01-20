@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/style.css';
+import ScoreCard from '../util/assist/ScoreCard';
 import NumberPad from './NumberPad';
 import ScoreBoard from './ScoreBoard';
 
 const App = function App() {
-  const buildRange10 = () => Array.from({ length: 11 }, (_, i) => i)
-  const range = buildRange10()
+  const buildRange10 = () => Array.from({ length: 11 }, (_, i) => i);
+  const range = buildRange10();
+  let [scorecard, updateScorecard] = useState(new ScoreCard());
   let [frames, updateFrames] = useState(Array
     .from({ length: 9}, () => ({ score: 0, subFrames: ['-', '-'] }))
     .concat([{ score:0, subFrames: ['-', '-', '-'] }]))
@@ -39,7 +41,7 @@ const App = function App() {
   return(
     <div className='page-container'>
       <h1 className='title'>Bowling Score Calculator</h1>
-      <ScoreBoard frames={frames}/>
+      <ScoreBoard frames={frames} scorecard={scorecard} updateScorecard={updateScorecard} />
       <NumberPad range={range} onClick={clickHandler} disabledList={disabledList}/>
     </div>
   )

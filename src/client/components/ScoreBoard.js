@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/style.css';
 
-const ScoreBoard = function ScoreBoard({ frames }) {
+const ScoreBoard = function ScoreBoard({ frames, scorecard, updateScorecard }) {
 
   return (
     <div className='sb-container'>
